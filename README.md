@@ -48,9 +48,7 @@ Example of ARServer with Swift 5 and MySQL 8
     }'
   ```
   
-* Get all users:
-
-  http://localhost:8080/user
+  * Get all users: http://localhost:8080/user
   
 * Create new object
   ```bash
@@ -64,6 +62,4 @@ Example of ARServer with Swift 5 and MySQL 8
     }'
   ```
   
-  * Get all objects:
-  
-    http://localhost:8080/object
+  * Get all objects: http://localhost:8080/object

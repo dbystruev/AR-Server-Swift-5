@@ -10,6 +10,7 @@ let package = Package(
         .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.9.0"),
         .package(url: "https://github.com/IBM-Swift/Swift-Kuery-ORM.git", from: "0.6.1"),
         .package(url: "https://github.com/IBM-Swift/SwiftKueryMySQL.git", from: "2.0.2"),
+        .package(url: "https://github.com/IBM-Swift/Kitura-OpenAPI.git", from: "1.3.0"),
     ],
     targets: [
         .target(
@@ -18,7 +19,7 @@ let package = Package(
         ),
         .target(
             name: "Application",
-            dependencies: [ "Kitura", "HeliumLogger", "SwiftKueryORM", "SwiftKueryMySQL" ]
+            dependencies: [ "Kitura", "HeliumLogger", "SwiftKueryORM", "SwiftKueryMySQL", "KituraOpenAPI" ]
         ),
         .testTarget(
             name: "ApplicationTests",

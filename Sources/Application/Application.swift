@@ -1,4 +1,5 @@
 import Kitura
+import KituraOpenAPI
 
 public class App {
 
@@ -10,6 +11,7 @@ public class App {
 
     func postInit() throws {
         initializeORMRoutes(app: self)
+        KituraOpenAPI.addEndpoints(to: router)
     }
 
     public func run() throws {

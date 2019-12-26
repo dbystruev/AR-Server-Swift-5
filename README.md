@@ -17,7 +17,7 @@ Example of ARServer with Swift 5 and MySQL 8
   ```bash
   docker run -p 8080:8080 -it --name ARServer -w/ARServer swift bash
   git clone https://github.com/dbystruev/AR-Server-Swift-5.git .
-  cat Sources/Application/Routes/ORMRoutes.swift | sed s/78.47.95.215/YOUR-MYSQL-SERVER-IP/ > ORMRoutes.swift.temp
+  cat Sources/Application/Routes/ORMRoutes.swift | sed s/88.198.117.222/YOUR-MYSQL-SERVER-IP/ > ORMRoutes.swift.temp
   rm Sources/Application/Routes/ORMRoutes.swift && mv ORMRoutes.swift.temp Sources/Application/Routes/ORMRoutes.swift
   apt update && apt -y upgrade
   apt -y install openssl libssl-dev libmysqlclient-dev libcurl4-openssl-dev

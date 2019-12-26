@@ -6,7 +6,7 @@ import SwiftKueryMySQL
 func initializeORMRoutes(app: App) {
     // Initialize MySQL Database
     let pool = MySQLConnection.createPool(
-        host: "78.47.95.215",
+        host: "88.198.117.222",
         user: "aruser",
         password: "arpassword",
         database: "ardb",

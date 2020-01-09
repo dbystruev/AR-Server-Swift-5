@@ -8,6 +8,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.9.0"),
         .package(url: "https://github.com/IBM-Swift/Kitura", from: "2.9.1"),
+        .package(url: "https://github.com/IBM-Swift/Kitura-Credentials.git", from: "2.5.0"),
+        .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsGoogle.git", from: "2.3.2"),
         .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsHTTP.git", from: "2.1.3"),
         .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsJWT.git", from: "1.0.1"),
         .package(url: "https://github.com/IBM-Swift/Kitura-OpenAPI.git", from: "1.3.0"),
@@ -23,6 +25,8 @@ let package = Package(
         .target(
             name: "Application",
             dependencies: [
+                "Credentials",
+                "CredentialsGoogle",
                 "CredentialsHTTP",
                 "CredentialsJWT",
                 "HeliumLogger",

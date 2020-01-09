@@ -15,11 +15,11 @@ func initializeSessionRoutes(app: App) {
 
 // MARK: - Session Routes
 extension App {
-    func getSessionHandler(session: Session, completion: @escaping ([Object]?, RequestError?) -> Void) {
+    func getSessionHandler(session: ARServerSession, completion: @escaping ([Object]?, RequestError?) -> Void) {
         completion(session.objects, nil)
     }
     
-    func postSessionHandler(session: Session, object: Object, completion: @escaping (Object?, RequestError?) -> Void) {
+    func postSessionHandler(session: ARServerSession, object: Object, completion: @escaping (Object?, RequestError?) -> Void) {
         session.objects.append(object)
         session.save()
         completion(object, nil)

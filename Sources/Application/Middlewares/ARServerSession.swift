@@ -1,5 +1,5 @@
 //
-//  Session.swift
+//  ARServerSession.swift
 //  ARServer
 //
 //  Created by Denis Bystruev on 26.12.2019.
@@ -7,7 +7,7 @@
 
 import KituraSession
 
-final class Session: TypeSafeSession {
+final class ARServerSession: TypeSafeSession {
     var sessionId: String
     var objects: [Object]
     
@@ -17,7 +17,7 @@ final class Session: TypeSafeSession {
     }
 }
 
-extension Session {
+extension ARServerSession {
     static var store: Store?
     static var sessionCookie: SessionCookie = SessionCookie(name: "UserObjects", secret: "Secret key to encrypt cookie")
 }

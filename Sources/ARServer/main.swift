@@ -2,7 +2,7 @@ import Application
 import LoggerAPI
 import HeliumLogger
 
-HeliumLogger.use()
+HeliumLogger.use(.debug)
 
 do {
     let app = try App()
